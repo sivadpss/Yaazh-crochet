@@ -18,12 +18,12 @@ This website was created to:
 - Assets – Images and styling files
 
 ## 🚀 Live Website
-( Add GitHub Pages link here after publishing )
+
 
 ## 📞 Contact
 For custom orders and inquiries:
-- Instagram: (Add your link)
-- Email: (Add your email)
+- Instagram: 
+- Email: 
 
 ---
 Made with ❤️ for handmade lovers.
