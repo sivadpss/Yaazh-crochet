@@ -1,37 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Yaazh Crochet | Luxury Handmade</title>
-  <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yaazh Crochet | Luxury Handmade</title>
 
-header {
+<style>
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #faf9fc;
+  color: #333;
+}
+
+/* HEADER */
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 50px;
+  padding: 15px 60px;
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
-.logo {
+.brand {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
-.logo img {
-  width: 40px;   /* Smaller logo size */
+.logo-img {
+  width: 38px;
   height: auto;
 }
 
-.logo h2 {
-  font-size: 20px;
+.brand-name {
+  font-size: 22px;
   font-weight: 600;
-  margin: 0;
+  letter-spacing: 1px;
+  color: #4b2e83;
 }
 
+.nav a {
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: 500;
+  color: #333;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: #4b2e83;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #f3e8ff, #ffffff);
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #4b2e83;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.buttons .btn {
+  display: inline-block;
+  padding: 12px 25px;
+  margin: 10px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.insta {
+  background: #e1306c;
+  color: white;
+}
+
+.whatsapp {
+  background: #25d366;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+/* CREATIONS */
+.creations {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.creations h2 {
+  margin-bottom: 40px;
+  color: #4b2e83;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  width: 250px;
+  transition: 0.3s;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+/* WHY SECTION */
+.why {
+  background: #f3e8ff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.feature {
+  width: 250px;
+}
+
+/* TESTIMONIAL */
+.testimonial {
+  padding: 60px 20px;
+  text-align: center;
+  font-style: italic;
+}
+
+/* CONTACT */
+.contact {
+  background: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  background: #4b2e83;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav a {
+    margin: 0 10px;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="brand">
+    <img src="logo.png" alt="Yaazh Crochet Logo" class="logo-img">
+    <h1 class="brand-name">Yaazh Crochet</h1>
+  </div>
+
+  <nav class="nav">
+    <a href="#">Products</a>
+    <a href="#">Why Us</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
 <section class="hero">
   <h1>Luxury Handmade Crochet Creations 💜</h1>
   <p>Beautiful crochet designs handcrafted with care. Custom-made pieces for every special occasion.</p>
@@ -41,24 +225,26 @@ header {
   </div>
 </section>
 
+<!-- CREATIONS -->
 <section class="creations">
   <h2>Our Creations ✨</h2>
   <div class="cards">
     <div class="card">
-      <img src="flower.jpg">
+      <img src="flower.jpg" alt="Crochet Flowers">
       <h3>Crochet Flowers</h3>
     </div>
     <div class="card">
-      <img src="toys.jpg">
+      <img src="toys.jpg" alt="Crochet Toys">
       <h3>Crochet Toys</h3>
     </div>
     <div class="card">
-      <img src="keychain.jpg">
+      <img src="keychain.jpg" alt="Crochet Keychains">
       <h3>Crochet Keychains</h3>
     </div>
   </div>
 </section>
 
+<!-- WHY -->
 <section class="why">
   <h2>Why Choose Yaazh Crochet?</h2>
   <div class="features">
@@ -77,11 +263,13 @@ header {
   </div>
 </section>
 
+<!-- TESTIMONIAL -->
 <section class="testimonial">
   <h2>Customer Love 💕</h2>
   <p>"Absolutely beautiful work! The quality and detailing are amazing."</p>
 </section>
 
+<!-- CONTACT -->
 <section class="contact">
   <h2>Get In Touch</h2>
   <p>Place your custom order through Instagram or WhatsApp.</p>
@@ -91,6 +279,7 @@ header {
   </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
   © 2026 Yaazh Crochet | Handmade with 💜
 </footer>
